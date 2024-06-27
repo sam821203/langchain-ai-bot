@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel ="stylesheet" href="{{url_for('static', filename='css/style.css')}}"></link>
+    </head>
+    <body>
+        <!-- <textarea id="dialog"></textarea>
+        <input type="text" id="message" name="message" placeholder="Enter your message" />
+        <button id="submit" type="button">Send</button> -->
+
+        <div class="chat">
+            <div class="chat-title">
+                <h1>AI bro</h1>
+                <h2>Supah</h2>
+                <figure class="avatar">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg" />
+                </figure>
+            </div>
+            <div id="dialog" class="messages">
+                <div class="messages-content"></div>
+            </div>
+            <div class="message-box">
+                <textarea id="message" name="message" type="text" class="message-input" placeholder="Type message..."></textarea>
+                <button id="submit" type="submit" class="message-submit">Send</button>
+            </div>
+        </div>
+        <div class="bg"></div>
+
+        <script src="//unpkg.com/jquery"></script>
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    </body>
+</html>
